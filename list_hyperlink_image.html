@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>membuat list, hyperlink, dan image</title>
+    <title id="bagian1">membuat list, hyperlink, dan image</title>
 </head>
 <body>
     <h3>To Do list</h3>
@@ -13,18 +13,19 @@
         <li>Sarapan</li>
         <li>Tidur lagi</li>
     </ol>
-    <h3>Saat sarapan, saya akan makan</h3>
+    <h3>image</h3>
     <ul>
-        <li>Nasi goreng</li>
-        <li>Mie goreng</li>
-        <li>Telur Dadar</li>
+        <li><img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="100" height="100">w3schools</li><!--cara terhubung dengan hootlink-->
+        <br><br><br><br><br><br><br><br>
+        <li><img src="/css/css.png" alt="css" width="100" height="100">CSS</li>
+        
     </ul>
-    <h3>Pemrograman web 1</h3>
+    <h3 >hyperlink & link</h3>
     <dl>
-        <dt>HTML</dt>
-        <dd>Hypertext Markup Language</dd>
-        <dt>CSS</dd>
-        <dd>Cascading Style Sheet</dd>
+        <dt><a href="https://www.w3schools.com/html/html_links.asp" target="-blank">HTML</a></dt><!--cara terhubung dengan external link-->
+        <dd><a href="attribut.html">Hypertext Markup Language</a></dd><!--cara terhubung dengan internal link-->
+        <dt><a href="/css/initial.css">CSS</a></dd><!--cara terhubung dangan relativ url-->
+        <dd><a href="#bagian1">Cascading Style Sheet</a></dd><!--cara terhubung dengan page anchor-->
     </dl>
 </body>
 </html>
