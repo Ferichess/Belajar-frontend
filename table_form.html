@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Table & Form</title>
+</head>
+<body>
+    <table border="5" cellspacing="0" cellpadding="10"><!--table simpel-->
+        <tr><!--table row-->
+            <td>baris 1, kolom1</td><!--table kolom/data-->
+            <td>baris 1, kolom2</td>
+            <td>baris 1, kolom3</td>
+            <td rowspan="3" >baris 1, kolom4</td>
+        </tr>
+        <tr>
+            <td>baris 2, kolom1</td>
+            <td>baris 2, kolom2</td>
+            <td>baris 2, kolom3</td>
+        </tr>
+        <tr>
+            <td>baris 3, kolom1</td>
+            <td>baris 3, kolom2</td>
+        </tr>
+    </table>
+    <br>
+    <table border="3" cellspacing="0" cellpadding="3">
+        <thead><!--header-->
+            <tr>
+                <th></th><!--table header-->
+                <th>kolom 1</th>
+                <th>kolom 2</th>
+                <th>kolom 3</th>
+                <th>kolom 4</th>
+                <th>kolom 5</th>
+                <th>kolom 6</th>
+            </tr>
+        </thead>
+      <tbody >
+          <tr>
+              <th>baris 1</th>
+              <td>baris 1,kolom 1</td>
+              <td>baris 1,kolom 2</td>
+              <td>baris 1,kolom 3</td>
+              <td>baris 1,kolom 4</td>
+              <td>baris 1,kolom 5</td>
+              <td>baris 1,kolom 6</td>
+          </tr>
+          <tr>
+              <th>baris 2</th>
+              <td>baris 2,kolom 1</td>
+              <td>baris 2,kolom 2</td>
+              <td colspan="2" rowspan="2">baris 2,kolom 3</td>
+              
+              <td>baris 2,kolom 5</td>
+              <td>baris 2,kolom 6</td>
+          </tr>
+          <tr>
+            <th>baris 3</th>
+            <td>baris 3,kolom 1</td>
+            <td>baris 3,kolom 2</td>
+    
+            <td>baris 3,kolom 5</td>
+            <td>baris 3,kolom 6</td>
+        </tr>
+        <tr>
+            <th>baris 4</th>
+            <td>baris 4,kolom 1</td>
+            <td>baris 4,kolom 2</td>
+            <td>baris 4,kolom 3</td>
+            <td>baris 4,kolom 4</td>
+            <td>baris 4,kolom 5</td>
+            <td>baris 4,kolom 6</td>
+        </tr>
+        <tr>
+            <th>baris 5</th>
+            <td>baris 5,kolom 1</td>
+            <td>baris 5,kolom 2</td>
+            <td>baris 5,kolom 3</td>
+            <td>baris 5,kolom 4</td>
+            <td>baris 5,kolom 5</td>
+            <td>baris 5,kolom 6</td>
+        </tr>
+        <tr>
+            <th>baris 6</th>
+            <td>baris 6,kolom 1</td>
+            <td>baris 6,kolom 2</td>
+            <td>baris 6,kolom 3</td>
+            <td>baris 6,kolom 4</td>
+            <td colspan="2">baris 6,kolom 5</td>
+            
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <table cellspacing="0" cellpadding="2">
+    <form>
+        <tr>
+            <td><label form="username">Username : </label></td>
+            <td><input type="text" id="username"></td>
+        </tr>
+        <br>
+        <tr>
+        <td><label form="password">Password : </label></td>
+        <td><input type="password" id="password"></td>
+        </tr>
+        <br>
+        <tr>
+        <td colspan="2" align="center"><label form="pria">Pria</label>
+        <input type="radio" id="pria" name="jeniskelamin">
+        <label form="wanita">Wanita</label>
+        <input type="radio" id="wanita" name="jeniskelamin"></td>
+        </tr>
+        <br>
+        <tr>
+        <td colspan="2"><label form="menyanyi">Menyanyi</label>
+        <input type="checkbox" id="menyanyi">
+        <label form="olahraga">Olahraga</label>
+        <input type="checkbox" id="olahraga">
+        <label form="ngoding">Ngoding</label>
+        <input type="checkbox" id="ngoding"></td>
+        </tr>
+        <br>
+        <tr>
+            <td><label for="daerah">Daerah</label></td>
+            <td><select name="daerah" id="list">
+            <option>Bandung</option>
+            <option>Yogyakarta</option>
+            <option>jakarta</option>
+            </select></td>
+        </tr>
+        <br>
+        <tr>
+        <td><label for="textarea">Textarea</label></td>
+        <td><textarea></textarea></td>
+        </tr>
+        <br>
+        <tr>
+            <td colspan="2" align="center"><button type="submit">Kirim !</button></td>
+        </tr>
+    </form>
+</table>
+</body>
+</html>
